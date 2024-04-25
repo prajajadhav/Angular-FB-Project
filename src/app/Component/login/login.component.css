@@ -1,0 +1,157 @@
+@import "src/styles.css";
+
+:root {
+    --primary-button-color: #007bff; /* Define the primary button color */
+  }
+  
+  /* Now you can use the variable in your styles */
+  .login-button {
+    background-color: var(--primary-button-color); /* Use the custom property */
+    /* Other button styles */
+  }
+  
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Login Container */
+.login-container {
+  background-color: #F0F2F5;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Login Header */
+.login__header {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__header__left {
+  width: 580px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.login__header__left img {
+  height: 56px;
+  margin-right: 32px;
+  margin-bottom: 20px;
+}
+
+.login__header__left h2 {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  width: 500px;
+}
+
+.login__header__right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Login Card */
+.login__header__right__card {
+  height: 340px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.login__header__right__card__content {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form input {
+  padding: 20px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.login-form input::placeholder {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.login-button {
+background-color: var(--primary-button-color); 
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Links */
+.login__header__right__card__content a {
+  text-decoration: none;
+  color: var(--primary-button-color); 
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.container {
+    width: 100%; /* Adjust the width as needed */
+    text-align: center;
+  }
+  
+  .create-account {
+    background-color: var(--success-button-color); /* Assuming --success-button-color is defined */
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+/* Tagline */
+.tagline {
+  text-align: center;
+  letter-spacing: 0.7px;
+}
+
+/* Login Footer */
+.login__footer {
+  height: 30vh;
+  align-self: flex-end;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

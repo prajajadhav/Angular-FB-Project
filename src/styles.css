@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Define Global Variables */
+:root {
+    /* BUTTONS */
+    --primary-button-color: #1877F2;
+    --success-button-color: #42B72A;
+
+    /* OTHER COLORS */
+    --header-color: white;
+    --body-color: #F0F2F5;
+}
+
+/* Now you can use the variables throughout your styles */
+.login-button {
+    background-color: var(--primary-button-color);
+    /* Other button styles */
+}
+
+.success-button {
+    background-color: var(--success-button-color);
+    /* Other button styles */
+}
+
+/* You can use other variables in a similar way */
+.header {
+    color: var(--header-color);
+}
+
+.body {
+    background-color: var(--body-color);
+}
