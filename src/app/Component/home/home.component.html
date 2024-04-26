@@ -1,1 +1,140 @@
-<p>home works!</p>
+
+<div class="home-container">
+    <div class="home__header">
+        <div class="home__header__left">
+            <img mat-card-avatar src="assets/fb-head.jpg" alt="">
+            <div class="input">
+                <mat-icon class="search-icon">search_outline</mat-icon>
+                <form>
+                    <input type="text" placeholder="search Facebook">
+                </form>
+            </div>
+            <div class="home__header__middle">
+                <div class="active">
+                    <mat-icon>home</mat-icon>
+                </div>
+                <div>
+                    <mat-icon>ondemand_video</mat-icon>
+                </div>
+                <div>
+                    <mat-icon>store</mat-icon>
+                </div>
+                <div>
+                    <mat-icon>group</mat-icon>
+                </div>
+                <div>
+                    <mat-icon>flag</mat-icon>
+                </div>
+            </div>
+            <div class="home__header__right">
+                <div>
+                    <img src="https://i.pinimg.com/236x/f6/4f/e6/f64fe62a890b434b578be2391d14716f.jpg" mat-card-avatar alt="avatar">
+                    <span class="name">My Name</span>
+                </div>
+                <div>
+                    <mat-icon>add</mat-icon>
+                </div>
+                <div>
+                    <mat-icon matBadge="4"
+                    matBadgeColor="primary"
+                    matBadgeOverlap="false"
+                    matBadgePosition="above after">forum
+                </mat-icon>
+                </div>
+                <div>
+                    <mat-icon matBadge="3"
+                   matBadgeColor="warn"
+                    matBadgeOverlap="false">notifications
+                </mat-icon>
+                </div>
+                <div>
+                    <mat-icon [matMenuTriggerFor]="menu">expand_more</mat-icon>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item> <mat-icon>exit_to_app</mat-icon>Logout</button>
+                    </mat-menu>   
+                </div>
+            </div>
+        </div>
+        <div class="home__body">
+            <div class="home__body__sidebarLeft">
+                <div class="inside">
+                    <div class="user-avatar">
+                        <img src="https://i.pinimg.com/236x/ee/56/f6/ee56f67cc79d9a397c2c39b45034392a.jpg" mat-card-avatar alt="">
+                        <span class="name">Name Here</span>
+                    </div>
+                    <div>
+                        <mat-icon>local_hospital</mat-icon>
+                        <span class="covid">COVID-19 Inforation Center</span>
+                    </div>
+                    <div>
+                        <mat-icon>flag</mat-icon>
+                        <span>Pages</span>
+                    </div>
+                    <div>
+                        <mat-icon>people</mat-icon>
+                        <span>Friends</span>
+                </div>
+                <div>
+                    <mat-icon>chat</mat-icon>
+                    <span>Messenger</span>
+            </div>
+            <div>
+                <mat-icon>store</mat-icon>
+                <span>Marketplace</span>
+        </div>
+        <div>
+            <mat-icon>video_library</mat-icon>
+            <span>Videos</span>
+    </div>
+    <div>
+        <mat-icon class="see-more">expand_more</mat-icon>
+        <span>See More</span>
+</div>
+            </div>
+        </div>
+        <div class="home__body__contentMiddle">
+            <div class="home__body__contentMiddle__top">
+                <mat-card *ngFor="let i of images" class="image-card">
+                    <img alt="bg"
+                    class="bg"
+                    src="{{i}}">
+                    <mat-card-content>
+                        <img src="https://i.pinimg.com/236x/f6/4f/e6/f64fe62a890b434b578be2391d14716f.jpg" class="avatar" alt="avatar">
+                        <span class="card-name">Jhon MIKE</span>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="home__body__contentMiddle_center">
+                <mat-card class="post-message">
+                    <mat-card-header
+                    class="post-message-header" style="padding-bottom: 20px; border-bottom: 1px solid lightgray;">
+                <img [src]="" mat-card-avatar alt="">
+                <form #form="ngForm" (ngSubmit)="postMessage(form)">
+                    <input type="text" name="message" class="on-your-mind" placeholder="What's on your mind?">
+                    <button style="display: none;" type="submit"></button>
+                </form>
+                </mat-card-header>
+                <mat-card-content class="card-body">
+                    <div>
+                        <mat-icon color="accent">videocam</mat-icon>
+                        <span>Live Video</span>
+                    </div>
+                    <div>
+                        <mat-icon color="primary">photo_album</mat-icon>
+                        <span>Photo/Video</span>
+                    </div>
+                    <div>
+                        <mat-icon color="warn">mood</mat-icon>
+                        <span>Feeling/Activity</span>
+                    </div>
+                </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+        <div class="home__body__feedRight">
+            <div class="inside">
+                <img src="assets/feed.jpg" alt="feed">
+            </div>
+        </div>
+    </div>
+</div>

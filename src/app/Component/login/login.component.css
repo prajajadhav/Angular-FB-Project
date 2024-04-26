@@ -128,7 +128,8 @@ background-color: var(--primary-button-color);
   
   .create-account {
     background-color: var(--success-button-color); /* Assuming --success-button-color is defined */
-    display: inline-block;
+    display: block;
+    margin: auto;
     outline: none;
     border: none;
     border-radius: 7px;
