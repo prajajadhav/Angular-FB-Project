@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-home',
@@ -18,10 +19,29 @@ export class HomeComponent implements OnInit {
   ];
 
 
-  constructor(){}
-ngOnInit(): void {
-  
-}
-postMessage(form: NgForm): void {}
-  
+  // constructor(){}
+  // ngOnInit(): void {}
+
+  // logout(): void {
+  //   // Your logout logic here
+  //   // For example, clearing session, removing tokens, etc.
+
+  //   // After logout, navigate to the login component
+  //   this.router.navigate(['/login']);
+  // }
+
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {}
+
+  postMessage(form: NgForm): void {
+    // Your post message logic here
+  }
+
+  logout(): void {
+    // Your logout logic here
+    this.router.navigate(['/login']);
+  }
+
+ 
 }

@@ -10,7 +10,7 @@
                     <form #form="ngForm" (ngSubmit)="login(form)" class="login-form">
                         <input type="text" name="email" ngModel placeholder="Email address or Phone number" required>
                         <input type="password" name="password" placeholder="password" required ngModel>
-                        <button [disabled]="form.invalid || form.pending" class="login-button">Log Ins</button>
+                        <button [disabled]="form.invalid || form.pending" class="login-button">Log In</button>
                     </form>
                     <a>Forgotten account?</a>
                     <hr>
